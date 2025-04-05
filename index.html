@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow - To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📋 TaskFlow</h1>
+
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Enter a task..." required />
+      <input type="date" id="dueDate" />
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div id="taskList"></div>
+
+    <h2>📈 Productivity Chart</h2>
+    <canvas id="taskChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
